@@ -17,6 +17,7 @@ class Admincontroller extends Controller
     {
         // $check = Auth::guard('admins')->check();
         // dd($check);
+        //dd
         // if (session()->has('login') && session()->get('login') == true) {
             $admin = new admin();
             $getAllAdmin = $admin->getAdmin();
@@ -298,7 +299,7 @@ class Admincontroller extends Controller
                     $errList[] = $row['A'];
                 }
             }
-
+            //Xóa tệp
             unlink($filePath);
 
             if (empty($errList)) {
